@@ -566,6 +566,15 @@ nav .fa {
   #header {
     background-image: url(../img/Background-phone.png);
   }
+  .logo {
+    width: 70px;
+    position: fixed;
+    display: inline-flex;
+    justify-content: space-between;
+  }
+  .logo:hover {
+    filter: drop-shadow(4px 4px 5px red);
+  }
   .header-text {
     font-size: 12px;
   }
@@ -578,7 +587,6 @@ nav .fa {
   .header-text span {
     font-size: 25px;
   }
-
   nav .fa {
     display: block;
     font-size: 25px;
