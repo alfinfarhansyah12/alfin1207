@@ -1,0 +1,351 @@
+<!-- https://www.youtube.com/watch?v=0YFrGy_mzjY&t=338s -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Muhammad Alfin Farhansyah</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/18e5e11fb6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <a href="#header">
+            <img src="img/logo.png" class="logo" />
+          </a>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Portfolio</a></li>
+            <li><a href="#contacts">Contact</a></li>
+            <i
+              class="fa fa-times"
+              style="color: #ff0000"
+              onclick="closemenu()"
+            ></i>
+          </ul>
+          <i class="fa fa-bars" style="color: #ff0000" onclick="openmenu()"></i>
+        </nav>
+      </div>
+      <div class="header-text">
+        <span id="typed"></span>
+        <h1>Muhammad Alfin Farhansyah</h1>
+        <p>I am <span class="auto-type"></span></p>
+      </div>
+      <div class="avatar">
+        <img src="img/alfinpic.jpeg" class="avatar" />
+      </div>
+      <!-- https://drive.google.com/file/d/1QDzyD7vV_7kETxlltWZ4P_RIPJyEyN6H/view?usp=share_link -->
+      <div class="CV">
+        <a
+          href="https://drive.google.com/file/d/1QDzyD7vV_7kETxlltWZ4P_RIPJyEyN6H/view?usp=share_link"
+          target="_blank"
+          class="link"
+          ><button style="--clr: #ff0000">
+            <span>Download CV</span><i></i></button
+        ></a>
+      </div>
+    </div>
+    <!-- ABOUT -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="img/alfin.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hello, Nama saya <span>Muhammad Alfin Farhansyah</span> saya lahir
+              pada tanggal 12 Juli 2002 tepatnya di Jakarta, Saya adalah salah
+              satu mahasiswa dikampus Universitas Gunadarma, prodi yang saya
+              ambil adalah Informatika selain sibuk menjadi mahasiswa saya saat
+              ini sedang menyibukan diri menjadi Volunteer diberbagai macam
+              event.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('certificate')">
+                Certificate
+              </p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>UI/UX</span><br />Mobile App Design | Design Website |
+                  Figma
+                </li>
+                <li>
+                  <span>Web Deplopment</span><br />Desgining Website | Portfolio
+                  | Marketplace
+                </li>
+                <li>
+                  <span>Design Graphic</span><br />Adobe Photoshop | Canva |
+                  Ilustrator
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Graphic Design</span> [Pt Maksimal Media Promosindo]<br />
+                  ▪ Membantu menyelenggarakan acara dan mengiklankan e-flyer
+                  lembaga pemerintah (DPR-MPR) dan sektor swasta. <br />▪
+                  Membantu pemasaran media sosial. <br />▪ Membantu merancang
+                  e-fyers, logo, latar belakang virtual, produk minuman, serta
+                  kemasan makanan ringan dan minuman. <br />▪ Merancang backwall
+                  yang akan diadakan pada acara dan merancang rundown
+                </li>
+                <li>
+                  <span>Division Service Operations</span> [Pt Telekomunikasi
+                  Indonesia Tbk]<br />▪ Membantu memasƟkan karyawan
+                  mengoperasikan printer, Wifi, dan soŌware/hardware yang
+                  digunakan. <br />▪ Membantu menyorƟr data excel yang
+                  diberikan. <br />▪ Membackup para karyawan yang memerlukan
+                  bantuan. <br />▪ Membantu meringankan karyawan dalam
+                  menyelesaikan pekerjaan
+                </li>
+                <li>
+                  <span>Volunteer</span> [Sabiphoria Fest 2023]<br />
+                  ▪ Memastikan tiket yang terjual dengan pengunjung sesuai data.
+                  <br />▪ Membantu scanner barcode untuk penukaran tiket menuju
+                  ke venue event. <br />▪ Mengecek tiket palsu atau resmi sesuai
+                  arahan dari PIC. <br />▪ Berkerja sama untuk merealisasikan
+                  event tersebut.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents education" id="education">
+              <ul>
+                <li>
+                  <span>2021 - Present</span><br class="peler" />Gunadarma
+                  University <br />Informatika - S1
+                </li>
+                <li>
+                  <span>2021</span><br />SMK Taman Siswa 2 Jakarta <br />Teknik
+                  Komputer dan Jaringan (TKJ)
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="certificate">
+              <ul>
+                <li><span>2021</span><br />Mikrotik MTCNA</li>
+                <li><span>2021</span><br />JakartaBNI46 Jersey Design</li>
+                <li>
+                  <span>2021</span><br />KKNI Level II from Badan Nasional
+                  Sertifikasi Profesi (BNSP)
+                </li>
+                <li><span>2020</span><br />Ramadhan Poster Competition</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END ABOUT -->
+
+    <!-- SERVICES -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code" style="color: #ff0000"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit aut
+              voluptas unde, deleniti, commodi iure, nulla recusandae at
+              repellat cupiditate magnam possimus necessitatibus fugiat sunt.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-crop" style="color: #ff0000"></i>
+            <h2>UI/UX</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit aut
+              voluptas unde, deleniti, commodi iure, nulla recusandae at
+              repellat cupiditate magnam possimus necessitatibus fugiat sunt.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-paint-roller" style="color: #ff0000"></i>
+            <h2>Graphic Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit aut
+              voluptas unde, deleniti, commodi iure, nulla recusandae at
+              repellat cupiditate magnam possimus necessitatibus fugiat sunt.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END SERVICES -->
+
+    <!-- START THE FEATURETTES -->
+    <div id="work">
+      <div class="sub-title">
+        <h3>My Work</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
+          repudiandae dolorem in. Dolor, pariatur quod ut unde nemo vero ea,
+          odio optio beatae sapiente quia.
+        </p>
+      </div>
+      <div>
+        <ul>
+          <li class="list active" data-filter="all">All</li>
+          <li class="list" data-filter="web">Website</li>
+          <li class="list" data-filter="ui/ux">UI/UX</li>
+          <li class="list" data-filter="designGraphic">Design Graphic</li>
+        </ul>
+      </div>
+      <div class="product">
+        <div class="itemBox" data-item="web">
+          <a href="https://www.google.com./" target="_blank"
+            ><img src="img/WEBSITE/WEB1.png"
+          /></a>
+        </div>
+        <div class="itemBox" data-item="ui/ux">
+          <img src="img/UIUX/PIC1.png" />
+        </div>
+        <div class="itemBox" data-item="designGraphic">
+          <img src="img/portfolio_pic3.jpg" />
+        </div>
+
+        <div class="itemBox" data-item="web">
+          <a href="https://www.google.com./" target="_blank"
+            ><img src="img/WEBSITE/WEB1.png"
+          /></a>
+        </div>
+        <div class="itemBox" data-item="ui/ux">
+          <img src="img/UIUX/PIC2.png" />
+        </div>
+        <div class="itemBox" data-item="designGraphic">
+          <img src="img/portfolio_pic6.jpg" />
+        </div>
+
+        <div class="itemBox" data-item="web">
+          <a href="https://www.google.com./" target="_blank"
+            ><img src="img/WEBSITE/WEB1.png"
+          /></a>
+        </div>
+        <div class="itemBox" data-item="ui/ux">
+          <img src="img/UIUX/PIC3.png" />
+        </div>
+        <div class="itemBox" data-item="designGraphic">
+          <img src="img/portfolio_pic1.jpg" />
+        </div>
+      </div>
+    </div>
+    <!-- PORTOFOLIO -->
+    <!-- <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="" alt="" />
+          </div>
+          <div class="work">
+            <img src="" alt="" />
+          </div>
+          <div class="work">
+            <img src="" alt="" />
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- END PORTOFOLIO -->
+
+    <!-- CONTACT -->
+    <div class="contact" id="contacts">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p class="email">
+              <a
+                href="mailto:alfinfarhansyah12@gmail.com?subject=From Portfolio"
+                subject="contenttt"
+                target="_blank"
+                ><i class="fa-solid fa-envelope"></i
+                >alfinfarhansyah12@gmail.com</a
+              >
+            </p>
+
+            <p class="whatsapp">
+              <a
+                href="https://api.whatsapp.com/send/?phone=6281282828861&text&type=phone_number&app_absent=0"
+                target="_blank"
+                ><i class="fa-solid fa-phone"></i>(+62) 812-8272-8861</a
+              >
+            </p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/mhmmdalfin07_/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/muhammad-alfin-farhansyah-0513a822b/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                type="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END CONTACT -->
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <p>
+        This is Website by<br />
+        &#169; Muhammad Alfin Farhansyah
+      </p>
+    </div>
+    <!-- END FOOTER -->
+
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script src="js/scipt.js"></script>
+  </body>
+</html>
