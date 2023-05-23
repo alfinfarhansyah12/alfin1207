@@ -308,8 +308,14 @@ nav ul li a:hover::after {
 .tab-contents ul li {
   list-style-type: none;
   margin: 10px 0;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #1e1d1d;
+  cursor: pointer;
 }
-
+.tab-contents ul li:hover {
+  background-color: #323232;
+}
 .tab-contents ul li span {
   color: red;
   font-size: 18px;
