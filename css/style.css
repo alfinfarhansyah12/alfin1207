@@ -512,7 +512,22 @@ nav ul li a:hover::after {
   font-size: 30px;
   margin-right: 15px;
   color: #ababab;
-  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.header-sosmed {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-sosmed a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #ababab;
+
   transition: transform 0.5s;
 }
 
@@ -553,6 +568,7 @@ form .btn2 {
   text-decoration: none;
   color: white;
 }
+.header-sosmed a:hover,
 .social-icons a:hover,
 .contact-left .email a:hover,
 .contact-left .whatsapp a:hover {
