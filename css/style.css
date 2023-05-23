@@ -14,6 +14,8 @@ html {
 body {
   background: #080808;
   color: white;
+  overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 #header {
@@ -33,13 +35,11 @@ body {
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  box-shadow: inset 0 0 70px black;
+  text-align: center;
 }
 
 .logo {
-  width: 100px;
+  width: 75px;
 }
 .logo:hover {
   filter: drop-shadow(8px 8px 10px red);
@@ -50,7 +50,9 @@ nav ul li {
   list-style: none;
   margin: 10px 20px;
 }
-
+nav ul li a.active {
+  color: red;
+}
 nav ul li a {
   color: white;
   text-decoration: none;
@@ -561,16 +563,41 @@ nav .fa {
   padding: 25px;
   font-size: 15px;
 }
+
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+
+/* END SCROLLBAR */
 /* MEDIA QUERIES */
 @media only screen and (max-width: 600px) {
   #header {
     background-image: url(../img/Background-phone.png);
   }
+
   .logo {
-    width: 70px;
-    position: fixed;
-    display: inline-flex;
-    justify-content: space-between;
+    width: 65px;
+    display: block;
+    position: relative;
+    justify-content: space-around;
+  }
+  .logo img {
+    margin: auto;
+    display: block;
   }
   .logo:hover {
     filter: drop-shadow(4px 4px 5px red);
@@ -587,6 +614,7 @@ nav .fa {
   .header-text span {
     font-size: 25px;
   }
+
   nav .fa {
     display: block;
     font-size: 25px;
@@ -603,8 +631,8 @@ nav .fa {
     width: 200px;
     height: 100vh;
     padding-top: 50px;
-    z-index: 2;
     border-radius: 10px;
+    z-index: 100;
   }
   nav ul li {
     display: block;
@@ -628,10 +656,9 @@ nav .fa {
     box-shadow: 0px 0px 20px red;
   }
   nav {
-    position: fixed;
-    display: inline-flex;
-    align-items: center;
+    display: flex;
     justify-content: space-between;
+    z-index: 100;
   }
   .sub-title {
     font-size: 40px;
