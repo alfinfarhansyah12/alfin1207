@@ -11,9 +11,10 @@
       src="https://kit.fontawesome.com/18e5e11fb6.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <div id="header">
+    <div id="header" data-aos="fade-up">
       <div class="container">
         <nav>
           <i class="fa fa-bars" style="color: #ff0000" onclick="openmenu()"></i>
@@ -65,7 +66,7 @@
       </div>
     </div>
     <!-- ABOUT -->
-    <div id="about">
+    <div id="about" data-aos="fade-up">
       <div class="container">
         <div class="row">
           <div class="about-col-1">
@@ -159,6 +160,14 @@
             <div class="tab-contents" id="certificate">
               <ul>
                 <li>
+                  <span>2023 </span><br />Policy Fest 2023 | | Balai Kota DKI
+                  Jakarta<br />Volunteer Registrasi
+                </li>
+                <li>
+                  <span>2023 </span><br />Sabiphoria Fest 2023 | | Jiexpo
+                  Kemayoran<br />Volunteer Ticketing
+                </li>
+                <li>
                   <span>2023</span><br />Webinar Kitalulus x Maen yo! |
                   <br />"Industri Game Sebagai Pilihan Karir di Zaman Now"
                 </li>
@@ -196,12 +205,16 @@
     <!-- END ABOUT -->
 
     <!-- SERVICES -->
-    <div id="services">
+    <div id="services" data-aos="fade-up">
       <div class="container">
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
           <div>
-            <i class="fa-solid fa-code" style="color: #ff0000"></i>
+            <i
+              class="fa-solid fa-code"
+              style="color: #ff0000"
+              data-aos="fade-up-right"
+            ></i>
             <h2>Web Design</h2>
             <p>
               Web Design adalah salah satu istilah tentang desain secara visual
@@ -215,7 +228,11 @@
           </div>
 
           <div>
-            <i class="fa-solid fa-crop" style="color: #ff0000"></i>
+            <i
+              class="fa-solid fa-crop"
+              style="color: #ff0000"
+              data-aos="fade-up-right"
+            ></i>
             <h2>UI/UX</h2>
             <p>
               UI/UX Design UX design adalah singkatan dari User Experience
@@ -228,7 +245,11 @@
           </div>
 
           <div>
-            <i class="fa-solid fa-paint-roller" style="color: #ff0000"></i>
+            <i
+              class="fa-solid fa-paint-roller"
+              style="color: #ff0000"
+              data-aos="fade-up-right"
+            ></i>
             <h2>Graphic Design</h2>
             <p>
               Graphic design merupakan sebuah bentuk seni lukis dengan cara
@@ -245,7 +266,7 @@
     <!-- END SERVICES -->
 
     <!-- START THE FEATURETTES -->
-    <div id="work">
+    <div id="work" data-aos="fade-up">
       <div class="sub-title">
         <h3>My Work</h3>
         <p>
@@ -256,13 +277,14 @@
       </div>
       <div>
         <ul>
+          <li class="list" data-filter="close">Close</li>
           <li class="list active" data-filter="all">All</li>
           <li class="list" data-filter="web">Website</li>
           <li class="list" data-filter="ui/ux">UI/UX</li>
           <li class="list" data-filter="designGraphic">Design Graphic</li>
         </ul>
       </div>
-      <div class="product">
+      <div class="product" data-aos="fade-up">
         <div class="itemBox" data-item="web">
           <a
             href="https://alfinfarhansyah12.github.io/alfin12.github.io/"
@@ -273,22 +295,16 @@
         <div class="itemBox" data-item="ui/ux">
           <img src="img/UIUX/PIC1.png" />
         </div>
-        <div class="itemBox" data-item="designGraphic">
-          <img src="img/portfolio_pic3.jpg" />
-        </div>
 
         <div class="itemBox" data-item="web">
           <a
             href="https://alfinfarhansyah12.github.io/alfin12.github.io/"
             target="_blank"
-            ><img src="img/WEBSITE/WEB1.png"
+            ><img src="img/WEBSITE/WEB2.png"
           /></a>
         </div>
         <div class="itemBox" data-item="ui/ux">
           <img src="img/UIUX/PIC2.png" />
-        </div>
-        <div class="itemBox" data-item="designGraphic">
-          <img src="img/portfolio_pic6.jpg" />
         </div>
 
         <div class="itemBox" data-item="web">
@@ -302,28 +318,66 @@
           <img src="img/UIUX/PIC3.png" />
         </div>
         <div class="itemBox" data-item="designGraphic">
-          <img src="img/portfolio_pic1.jpg" />
+          <img src="img/e-flyer/eflyer-1.jpg" />
+        </div>
+        <div class="itemBox" data-item="designGraphic">
+          <img src="img/e-flyer/eflyer-2.jpg" />
+        </div>
+        <div class="itemBox" data-item="designGraphic">
+          <img src="img/e-flyer/eflyer-3.jpg" />
+        </div>
+        <div class="itemBox" data-item="designGraphic">
+          <img src="img/e-flyer/eflyer-4.jpg" />
+        </div>
+        <div class="itemBox" data-item="designGraphic">
+          <img src="img/e-flyer/eflyer-5.jpg" />
+        </div>
+        <div class="itemBox" data-item="designGraphic">
+          <img src="img/e-flyer/eflyer-6.jpg" />
         </div>
       </div>
     </div>
-    <!-- PORTOFOLIO -->
-    <!-- <div id="portfolio">
-      <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-          <div class="work">
-            <img src="" alt="" />
-          </div>
-          <div class="work">
-            <img src="" alt="" />
-          </div>
-          <div class="work">
-            <img src="" alt="" />
-          </div>
+    <!-- START THE FEATURETTES -->
+    <div id="work1">
+      <div class="sub-title1">
+        <h3>My Document Picture</h3>
+        <p>
+          Dibawah ini merupakan beberapa foto atau dokumentasi pengalaman dari
+          berbagai macam event.
+        </p>
+      </div>
+      <div>
+        <ul>
+          <li class="list1" data-filter1="close">Close</li>
+          <li class="list1 active" data-filter1="all">All</li>
+          <li class="list1" data-filter1="sabi">Sabiphoria Fest 2023</li>
+          <li class="list1" data-filter1="policy">Policy Fest 2023</li>
+        </ul>
+      </div>
+      <div class="product1" data-aos="fade-up">
+        <!-- SABIPHORIA -->
+        <div class="itemBox1" data-item1="sabi">
+          <img src="img/sabi/sabi2.jpeg" />
+        </div>
+        <div class="itemBox1" data-item1="sabi">
+          <img src="img/sabi/sabi1.jpeg" />
+        </div>
+        <div class="itemBox1" data-item1="sabi">
+          <img src="img/sabi/sabi3.jpeg" />
+        </div>
+
+        <!-- POLICY FEST 2023 -->
+        <div class="itemBox1" data-item1="policy">
+          <img src="img/polcy/polcy1.png" />
+        </div>
+        <div class="itemBox1" data-item1="policy">
+          <img src="img/polcy/polcy2.jpeg" />
+        </div>
+        <div class="itemBox1" data-item1="policy">
+          <img src="img/polcy/polcy3.jpeg" />
         </div>
       </div>
-    </div> -->
-    <!-- END PORTOFOLIO -->
+    </div>
 
     <!-- CONTACT -->
     <div class="contact" id="contacts">
@@ -374,8 +428,16 @@
                 rows="6"
                 placeholder="Your Message"
               ></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
+              <button type="submit" class="btn btn2" onclick="openPopup()">
+                Submit
+              </button>
             </form>
+          </div>
+          <div class="popup" id="popup">
+            <img src="img/tick.png" />
+            <h2>Thank You !</h2>
+            <p>Your details has been successfully. Thanks!</p>
+            <button type="button" onclick="closePopup()">Ok</button>
           </div>
         </div>
       </div>
@@ -394,4 +456,8 @@
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
     <script src="js/scipt.js"></script>
   </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>

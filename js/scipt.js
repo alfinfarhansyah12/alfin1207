@@ -16,12 +16,13 @@ function opentab(tabname) {
  * Hero type effect
  */
 var typed = new Typed(".auto-type", {
-  strings: ["College Student", "Web Development", "UI/UX"],
+  strings: ["University Student", "Web Development", "UI/UX"],
   loop: true,
   typeSpeed: 100,
   backSpeed: 100,
 });
 
+// MY PROJECT
 var list = document.querySelectorAll(".list");
 var itemBox = document.querySelectorAll(".itemBox");
 
@@ -48,6 +49,36 @@ for (var i = 0; i < list.length; i++) {
     }
   });
 }
+// END PROJECT
+
+// MY DOCUMENT PICTURE
+var list1 = document.querySelectorAll(".list1");
+var itemBox1 = document.querySelectorAll(".itemBox1");
+
+for (var i = 0; i < list1.length; i++) {
+  list1[i].addEventListener("click", function () {
+    for (var j = 0; j < list1.length; j++) {
+      list1[j].classList.remove("active");
+    }
+    this.classList.add("active");
+
+    var dataFilter1 = this.getAttribute("data-filter1");
+
+    for (var k = 0; k < itemBox1.length; k++) {
+      itemBox1[k].classList.remove("active");
+      itemBox1[k].classList.add("hide");
+
+      if (
+        itemBox1[k].getAttribute("data-item1") == dataFilter1 ||
+        dataFilter1 == "all"
+      ) {
+        itemBox1[k].classList.remove("hide");
+        itemBox1[k].classList.add("active");
+      }
+    }
+  });
+}
+//END DOCUMENT PICTURE
 
 var sidemenu = document.getElementById("sidemenu");
 
@@ -58,4 +89,14 @@ function openmenu() {
 function closemenu() {
   sidemenu.style.right = "-200px";
   sidemenu.style.transform = "translateX(5px)";
+}
+
+// BUTTON SUBMIT CONTACT
+let popup = document.getElementById("popup");
+
+function openPopup() {
+  popup.classList.add("open-popup");
+}
+function closePopup() {
+  popup.classList.remove("open-popup");
 }
