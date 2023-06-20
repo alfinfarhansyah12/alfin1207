@@ -326,6 +326,10 @@ nav ul li a:hover::after {
   font-weight: 500;
   font-family: "Poppins", sans-serif;
 }
+.tab-contents ul li .tempat {
+  color: grey;
+  font-size: 14px;
+}
 .tab-contents.active-tab {
   display: block;
 }
