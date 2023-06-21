@@ -202,6 +202,85 @@ nav ul li a:hover::after {
   animation: move 3s infinite;
 }
 
+.graphic button {
+  position: relative;
+  background: #444;
+  border: none;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  transition: 0.2s;
+  top: 55px;
+  display: block;
+  margin: auto;
+  color: #fff;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.graphic button:hover {
+  letter-spacing: 0.2rem;
+  padding: 1.1rem 2rem;
+  background: var(--clr);
+  color: var(--clr);
+  /* box-shadow: 0 0 35px var(--clr); */
+  animation: box 3s infinite;
+  cursor: pointer;
+}
+
+.graphic button::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #272822;
+}
+
+.graphic button span {
+  position: relative;
+  z-index: 1;
+}
+.graphic button i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.graphic button i::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  left: 80%;
+  top: -2px;
+  border: 2px solid var(--clr);
+  background: #272822;
+  transition: 0.2s;
+}
+
+.graphic button:hover i::before {
+  width: 15px;
+  left: 20%;
+  animation: move 3s infinite;
+}
+
+.graphic button i::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  left: 20%;
+  bottom: -2px;
+  border: 2px solid var(--clr);
+  background: #272822;
+  transition: 0.2s;
+}
+
+.graphic button:hover i::after {
+  width: 15px;
+  left: 80%;
+  animation: move 3s infinite;
+}
+
 @keyframes move {
   0% {
     transform: translateX(0);
