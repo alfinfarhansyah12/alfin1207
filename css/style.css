@@ -907,6 +907,7 @@ nav .fa {
 /* END SCROLL BUTTON */
 
 /* MEDIA QUERIES */
+/* TAMPILAN ANDROID | IP */
 @media only screen and (max-width: 600px) {
   #header {
     background-image: url(../img/Background-phone.png);
@@ -992,7 +993,7 @@ nav .fa {
     position: absolute;
     text-align: center;
     bottom: 0;
-    transform: translate(-65%, 15%);
+    transform: translate(-65%, 35%);
   }
   .about-col-1,
   .about-col-2 {
