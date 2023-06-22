@@ -100,3 +100,23 @@ function openPopup() {
 function closePopup() {
   popup.classList.remove("open-popup");
 }
+
+// BUTTON SCROLL POJOK KANAN
+// ketika pengunjung scroll kebawah 20px dari atas dokumen, maka tampilkan tombol scroll-btn
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("scroll-btn").style.display = "block";
+  } else {
+    document.getElementById("scroll-btn").style.display = "none";
+  }
+}
+
+// ketika tombol tersebut di klik, maka lakukan scroll keatas laman
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
