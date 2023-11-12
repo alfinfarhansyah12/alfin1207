@@ -120,3 +120,14 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+// MODAL ALFIN
+function showImage() {
+  var imageContainer = document.getElementById("imageContainer");
+  imageContainer.style.display = "block";
+}
+
+function hideImage() {
+  var imageContainer = document.getElementById("imageContainer");
+  imageContainer.style.display = "none";
+}

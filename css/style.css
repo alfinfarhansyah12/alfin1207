@@ -595,6 +595,12 @@ nav ul li a:hover::after {
   border-radius: 20px;
 }
 
+#work ul li:hover,
+#work1 ul li:hover {
+  background: rgba(151, 19, 19, 0.842);
+  color: white;
+}
+
 #work ul li.active {
   background: rgb(151, 19, 19);
   color: rgb(255, 255, 255);
@@ -1017,4 +1023,22 @@ nav .fa {
     position: relative;
     font-size: 30px;
   }
+}
+
+/* MODAL ALFIN BAGIAN CERTIFICATE*/
+/* CLICK ME TAMPILAN SERTIFIKAT */
+.tab-contents .serti {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  background: grey;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.tab-contents .serti:hover {
+  background: rgb(122, 23, 23);
+}
+.itemboxx ul li .list:hover {
+  background: red;
 }
